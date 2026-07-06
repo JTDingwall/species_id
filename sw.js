@@ -1,4 +1,4 @@
-const CACHE = 'species-id-v5';
+const CACHE = 'species-id-v6';
 
 // Only pre-cache critical assets (JS, CSS, HTML, manifest). Images are lazy-cached at runtime.
 const PRECACHE_URLS = [
