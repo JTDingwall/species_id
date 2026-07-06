@@ -146,7 +146,7 @@ function renderTaxonomyView(species) {
 function renderSpeciesCard(s) {
     return `
         <div class="species-card" onclick="openSpeciesModal(${s.id})">
-            <img src="${s.imageUrl}" alt="${s.commonName}" loading="lazy" onerror="this.parentElement.innerHTML='<div style=\\'padding:20px;text-align:center\\'>📷<br><small>${s.commonName}</small></div>'">
+            <img src="${s.imageUrl}" alt="${s.commonName}" loading="lazy" onerror="var p=this.parentElement;var d=document.createElement('div');d.style.padding='20px';d.style.textAlign='center';d.innerHTML='&#x1F4F7;<br><small>'+p.querySelector('.card-label').textContent+'</small>';p.replaceChildren(d)">
             <div class="card-label">${s.commonName}</div>
         </div>
     `;

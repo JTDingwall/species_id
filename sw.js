@@ -1,5 +1,7 @@
-const CACHE = 'species-id-v4';
-const URLS = [
+const CACHE = 'species-id-v5';
+
+// Only pre-cache critical assets (JS, CSS, HTML, manifest). Images are lazy-cached at runtime.
+const PRECACHE_URLS = [
   'index.html',
   'css/style.css',
   'js/data.js',
@@ -9,138 +11,21 @@ const URLS = [
   'js/matching.js',
   'js/timed.js',
   'js/app.js',
-  'manifest.json',
-  'images/species-01.jpg',
-  'images/species-02.jpg',
-  'images/species-03.jpg',
-  'images/species-04.jpg',
-  'images/species-05.jpg',
-  'images/species-06.jpg',
-  'images/species-07.jpg',
-  'images/species-08.jpg',
-  'images/species-09.jpg',
-  'images/species-10.jpg',
-  'images/species-11.jpg',
-  'images/species-12.jpg',
-  'images/species-13.jpg',
-  'images/species-14.jpg',
-  'images/species-15.jpg',
-  'images/species-16.jpg',
-  'images/species-17.jpg',
-  'images/species-18.jpg',
-  'images/species-19.jpg',
-  'images/species-20.jpg',
-  'images/species-21.jpg',
-  'images/species-22.jpg',
-  'images/species-23.jpg',
-  'images/species-24.jpg',
-  'images/species-25.jpg',
-  'images/species-26.jpg',
-  'images/species-27.jpg',
-  'images/species-28.jpg',
-  'images/species-29.jpg',
-  'images/species-30.jpg',
-  'images/species-31.jpg',
-  'images/species-32.jpg',
-  'images/species-33.jpg',
-  'images/species-34.jpg',
-  'images/species-35.jpg',
-  'images/species-36.jpg',
-  'images/species-37.jpg',
-  'images/species-38.jpg',
-  'images/species-39.jpg',
-  'images/species-40.jpg',
-  'images/species-41.jpg',
-  'images/species-42.jpg',
-  'images/species-43.jpg',
-  'images/species-44.jpg',
-  'images/species-45.jpg',
-  'images/species-46.jpg',
-  'images/species-47.jpg',
-  'images/species-48.jpg',
-  'images/species-49.jpg',
-  'images/species-50.jpg',
-  'images/species-51.jpg',
-  'images/species-52.jpg',
-  'images/species-53.jpg',
-  'images/species-54.jpg',
-  'images/species-55.jpg',
-  'images/species-56.jpg',
-  'images/species-57.jpg',
-  'images/species-58.jpg',
-  'images/species-59.jpg',
-  'images/species-60.jpg',
-  'images/species-61.jpg',
-  'images/species-62.jpg',
-  'images/species-63.jpg',
-  'images/species-64.jpg',
-  'images/species-65.jpg',
-  'images/species-66.jpg',
-  'images/species-67.jpg',
-  'images/species-68.jpg',
-  'images/species-69.jpg',
-  'images/species-70.jpg',
-  'images/species-71.jpg',
-  'images/species-72.jpg',
-  'images/species-73.jpg',
-  'images/species-74.jpg',
-  'images/species-75.jpg',
-  'images/species-76.jpg',
-  'images/species-77.jpg',
-  'images/species-78.jpg',
-  'images/species-79.jpg',
-  'images/species-80.jpg',
-  'images/species-81.jpg',
-  'images/species-82.jpg',
-  'images/species-83.jpg',
-  'images/species-84.jpg',
-  'images/species-85.jpg',
-  'images/species-86.jpg',
-  'images/species-87.jpg',
-  'images/species-88.jpg',
-  'images/species-89.jpg',
-  'images/species-90.jpg',
-  'images/species-91.jpg',
-  'images/species-92.jpg',
-  'images/species-93.jpg',
-  'images/species-94.jpg',
-  'images/species-95.jpg',
-  'images/species-96.jpg',
-  'images/species-97.jpg',
-  'images/species-98.jpg',
-  'images/species-99.jpg',
-  'images/species-100.jpg',
-  'images/species-101.jpg',
-  'images/species-102.jpg',
-  'images/species-103.jpg',
-  'images/species-104.jpg',
-  'images/species-105.jpg',
-  'images/species-106.jpg',
-  'images/species-107.jpg',
-  'images/species-108.jpg',
-  'images/species-109.jpg',
-  'images/species-110.jpg',
-  'images/species-111.jpg',
-  'images/species-112.jpg',
-  'images/species-113.jpg',
-  'images/species-114.jpg',
-  'images/species-115.jpg',
-  'images/species-116.jpg',
-  'images/species-117.jpg',
-  'images/species-118.jpg',
-  'images/species-119.jpg',
-  'images/species-120.jpg',
-  'images/species-121.jpg',
-  'images/species-122.jpg',
-  'images/species-123.jpg',
-  'images/species-124.jpg',
-  'images/species-125.jpg'
+  'manifest.json'
 ];
 
-// Install: cache static assets
+// Install: cache critical static assets
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(CACHE).then(cache => cache.addAll(URLS))
+    caches.open(CACHE).then(cache => {
+      return Promise.allSettled(
+        PRECACHE_URLS.map(url =>
+          cache.add(url).catch(err => {
+            console.warn('SW: failed to pre-cache', url, err);
+          })
+        )
+      );
+    })
   );
   self.skipWaiting();
 });
@@ -157,16 +42,31 @@ self.addEventListener('activate', e => {
 
 // Fetch: serve from cache, fallback to network, cache the result
 self.addEventListener('fetch', e => {
+  // Skip non-GET requests
+  if (e.request.method !== 'GET') return;
+
   e.respondWith(
     caches.match(e.request).then(cached => {
-      const fetchPromise = fetch(e.request).then(response => {
+      if (cached) return cached;
+
+      return fetch(e.request).then(response => {
+        // Only cache successful responses
         if (response && response.ok && response.type === 'basic') {
           const clone = response.clone();
           caches.open(CACHE).then(cache => cache.put(e.request, clone));
         }
         return response;
-      }).catch(() => cached);
-      return cached || fetchPromise;
+      }).catch(() => {
+        // If network fails for an image, return a simple fallback
+        if (e.request.destination === 'image') {
+          return new Response(
+            '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150" viewBox="0 0 200 150"><rect width="200" height="150" fill="#e8d9c0"/><text x="100" y="75" text-anchor="middle" font-size="48">📷</text></svg>',
+            { headers: { 'Content-Type': 'image/svg+xml' } }
+          );
+        }
+        // For non-image requests, return the cached version if available
+        return cached;
+      });
     })
   );
 });
