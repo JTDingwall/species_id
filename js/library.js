@@ -50,7 +50,7 @@ function renderLibrary() {
 
     const container = document.getElementById('libraryContent');
     const controls = `
-        <input type="text" class="search-bar" id="librarySearch" placeholder="🔍 Search 275 species..." oninput="renderLibrary()">
+        <input type="text" class="search-bar" id="librarySearch" placeholder="🔍 Search 25 species..." oninput="renderLibrary()">
         <div class="library-controls">
             <button class="sort-btn ${librarySortMode === 'zonation' ? 'active' : ''}" onclick="setLibrarySort('zonation')">🌊 By Zone</button>
             <button class="sort-btn ${librarySortMode === 'taxonomy' ? 'active' : ''}" onclick="setLibrarySort('taxonomy')">🔬 By Taxonomy</button>
