@@ -1375,7 +1375,934 @@ const SPECIES_DATA = [
       "Found under rocks; glides smoothly on a mucus trail"
     ],
     imageUrl: "images/species-75.jpg",
-    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    imageCredit: "Photo: Wikimedia Commons CC-BY (illustration)",
     color: "#22aa44"
+  },
+
+  // === 76-125: Nearshore fish + additional invertebrates ===
+  // -- Nearshore Fish --
+  {
+    id: 76,
+    commonName: "Tidepool Sculpin",
+    latinName: "Oligocottus maculosus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "High to mid intertidal",
+    description: "The most common intertidal fish in the Northeast Pacific. A small, cryptic sculpin that blends perfectly with rocks. Can survive out of water for hours in moist tidepools by breathing air directly.",
+    identificationTips: [
+      "Small (up to 9 cm) with mottled brown, grey, and green coloration",
+      "Large fan-like pectoral fins, no scales",
+      "Often seen resting on the bottom of tidepools, perfectly camouflaged"
+    ],
+    imageUrl: "images/species-76.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#8b7d6b"
+  },
+  {
+    id: 77,
+    commonName: "Penpoint Gunnel",
+    latinName: "Apodichthys flavidus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Low intertidal",
+    description: "An eel-like fish that hides under rocks and in algae. Bright green to olive in color, with a distinctive dark spot at the base of the tail fin. Can breathe air and survive out of water temporarily.",
+    identificationTips: [
+      "Long, slender eel-like body up to 45 cm",
+      "Bright green to olive coloration with a dark spot at tail base",
+      "Sharp, spine-like anal fin ray ('pen point') near the vent"
+    ],
+    imageUrl: "images/species-77.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#4a8c3f"
+  },
+  {
+    id: 78,
+    commonName: "Crescent Gunnel",
+    latinName: "Pholis laeta",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Mid intertidal",
+    description: "A small, brightly colored gunnel with distinctive crescent-shaped markings below the eyes. Yellow-green to brown body with dark vertical bars. Common under rocks at low tide.",
+    identificationTips: [
+      "Crescent-shaped dark mark beneath each eye — key ID feature",
+      "Yellow-green to brown with dark vertical bars or saddles",
+      "Up to 25 cm; eel-like body with small pectoral fins"
+    ],
+    imageUrl: "images/species-78.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#c4a43e"
+  },
+  {
+    id: 79,
+    commonName: "Padded Sculpin",
+    latinName: "Artedius fenestralis",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Mid to low intertidal",
+    description: "A medium-sized sculpin with a knobby, bumpy head and prominent cirri (tiny skin flaps). Its wide mouth and flattened head give it a frog-like appearance when viewed from above.",
+    identificationTips: [
+      "Bumpy, knobby head with cirri (skin flaps) above the eyes",
+      "Mottled brown, tan, and grey — excellent camouflage on rocks",
+      "Large pectoral fins; body up to 12 cm"
+    ],
+    imageUrl: "images/species-79.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#9e8e7c"
+  },
+  {
+    id: 80,
+    commonName: "Pacific Staghorn Sculpin",
+    latinName: "Leptocottus armatus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Low intertidal",
+    description: "A large sculpin with distinctive antler-like preopercular spines. Can grow up to 45 cm. Tolerates a wide range of salinities and is common in estuaries and tidepools.",
+    identificationTips: [
+      "Large, 3-pronged 'antler' spine on each cheek (preoperculum)",
+      "Mottled olive-grey, brown, and cream coloration",
+      "Body can be very large (up to 45 cm); fans out pectorals on substrate"
+    ],
+    imageUrl: "images/species-80.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#7a7a5c"
+  },
+  {
+    id: 81,
+    commonName: "Saddleback Gunnel",
+    latinName: "Pholis ornata",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Mid intertidal",
+    description: "A brightly patterned gunnel with distinctive saddle-like dark bands across the back. The bands alternate with lighter orange or yellow spaces. Found under rocks at low tide.",
+    identificationTips: [
+      "Dark saddle-shaped bands across the back (alternating with light bands)",
+      "Orange to olive-green body, up to 25 cm",
+      "Eel-like; often found coiled under rocks in the intertidal"
+    ],
+    imageUrl: "images/species-81.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#d4956b"
+  },
+  {
+    id: 82,
+    commonName: "High Cockscomb",
+    latinName: "Anoplarchus purpurescens",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Mid intertidal",
+    description: "A prickleback with a distinctive fleshy crest (cockscomb) on top of the head. Body color ranges from purple to olive-brown. Extremely slippery — hard to catch!",
+    identificationTips: [
+      "Fleshy crest or 'cockscomb' ridge on top of the head",
+      "Purplish-brown to olive body, up to 25 cm",
+      "Long dorsal fin and anal fin running most of the body length"
+    ],
+    imageUrl: "images/species-82.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#6b3a7d"
+  },
+  {
+    id: 83,
+    commonName: "Bay Pipefish",
+    latinName: "Syngnathus leptorhynchus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Syngnathiformes",
+    habitat: "Low intertidal",
+    description: "A slender, pencil-thin relative of seahorses. Hides in eelgrass and algae. Males carry eggs in a brood pouch. The snout is a long tube used to suck up tiny crustaceans.",
+    identificationTips: [
+      "Very long, thin body (like a straightened seahorse) up to 30 cm",
+      "Tube-like snout with a tiny mouth at the tip",
+      "Green to brown; found in eelgrass beds and algae"
+    ],
+    imageUrl: "images/species-83.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#6b8e4a"
+  },
+  {
+    id: 84,
+    commonName: "Kelp Greenling",
+    latinName: "Hexagrammos decagrammus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Low intertidal",
+    description: "A medium-sized fish with distinctive blue or blue-green flesh (yes, the meat is blue!). Males and females have different color patterns. Males are dark with blue spots, females are speckled.",
+    identificationTips: [
+      "Blue or turquoise spots on the head and body (males)",
+      "Females are brownish with orange or red speckles",
+      "5 lateral lines on each side; cirrus (small flap) above each eye"
+    ],
+    imageUrl: "images/species-84.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#3b7dd8"
+  },
+  {
+    id: 85,
+    commonName: "Black Prickleback",
+    latinName: "Xiphister atropurpureus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Mid intertidal",
+    description: "A dark, eel-like fish with a long dorsal fin running the length of the body. Deep brown to nearly black in color. Very slippery and hard to catch — moves like a snake through rocks and algae.",
+    identificationTips: [
+      "Very dark coloration: deep brown to almost black",
+      "Long, eel-like body up to 30 cm",
+      "Dorsal and anal fins run nearly the full body length"
+    ],
+    imageUrl: "images/species-85.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#1a1a2e"
+  },
+  {
+    id: 86,
+    commonName: "Rock Prickleback",
+    latinName: "Xiphister mucosus",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Mid intertidal",
+    description: "A lighter-colored relative of the black prickleback, with a distinctive yellowish-olive body and dark stripes along the side. Found under rocks in the mid-intertidal zone.",
+    identificationTips: [
+      "Olive-green to yellowish body with dark horizontal stripes",
+      "Three dark lines radiating from each eye",
+      "Long, eel-like body up to 55 cm; very slippery!"
+    ],
+    imageUrl: "images/species-86.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#7a8e4c"
+  },
+  {
+    id: 87,
+    commonName: "Mosshead Warbonnet",
+    latinName: "Chirolophis nugator",
+    phylum: "Chordata",
+    class: "Actinopterygii",
+    order: "Scorpaeniformes",
+    habitat: "Low intertidal",
+    description: "One of the most ornate intertidal fish, with a spectacular crown of branched cirri on the head. The body is brown with lighter mottling. Hides in crevices and under ledges.",
+    identificationTips: [
+      "Elaborate crown of branched cirri (fleshy tendrils) on the head — looks like a mossy headdress",
+      "Brown body with cream or white mottling",
+      "Up to 20 cm; compressed, elongated body"
+    ],
+    imageUrl: "images/species-87.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#5c4033"
+  },
+
+  // -- Additional Echinodermata --
+  {
+    id: 88,
+    commonName: "Sand Dollar",
+    latinName: "Dendraster excentricus",
+    phylum: "Echinodermata",
+    class: "Echinoidea",
+    order: "Clypeasteroida",
+    habitat: "Low intertidal",
+    description: "A flat, disk-shaped urchin that lives partially buried in sand. Covered in short, velvety spines used for locomotion and feeding. The characteristic 'flower' pattern on the test is visible after the spines fall off.",
+    identificationTips: [
+      "Flat, round disk shape with a 5-petaled flower pattern on the upper surface",
+      "Grey to purple-brown when alive (spines attached); white skeleton when dead",
+      "Found in sandy areas; often in dense beds"
+    ],
+    imageUrl: "images/species-88.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#d4c4b0"
+  },
+  {
+    id: 89,
+    commonName: "Sun Star",
+    latinName: "Solaster stimpsoni",
+    phylum: "Echinodermata",
+    class: "Asteroidea",
+    order: "Valvatida",
+    habitat: "Low intertidal",
+    description: "A striking sea star with 8-12 long, slender arms and a blue-grey to orange body with a darker stripe down each arm. Feeds primarily on sea cucumbers.",
+    identificationTips: [
+      "8-12 long, tapering arms with a darker stripe down the center of each",
+      "Blue-grey, purple, or orange-red with banded arms",
+      "Up to 50 cm across; smooth texture"
+    ],
+    imageUrl: "images/species-89.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#5b7cb5"
+  },
+  {
+    id: 90,
+    commonName: "Slender Sea Star",
+    latinName: "Amphiodia occidentalis",
+    phylum: "Echinodermata",
+    class: "Ophiuroidea",
+    order: "Ophiurida",
+    habitat: "Low intertidal",
+    description: "A small brittle star that lives buried in sand, extending only its arm tips to feed. The arms are extremely long and flexible, up to 10x the disk diameter. The disk is only about 1 cm across.",
+    identificationTips: [
+      "Tiny central disk (about 1 cm) with extremely long, slender arms (up to 10 cm)",
+      "Arms are grey to pale brown; disk is greyish",
+      "Found buried in sand; arm tips visible at the surface feeding"
+    ],
+    imageUrl: "images/species-90.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#c4b8a8"
+  },
+
+  // -- Additional Cnidaria --
+  {
+    id: 91,
+    commonName: "Orange Cup Coral",
+    latinName: "Balanophyllia elegans",
+    phylum: "Cnidaria",
+    class: "Anthozoa",
+    order: "Scleractinia",
+    habitat: "Low intertidal",
+    description: "The only true stony coral common in the intertidal zone of the Pacific Northwest. A solitary coral with a bright orange polyp surrounded by clear, tapering tentacles. Lives attached to rocks.",
+    identificationTips: [
+      "Bright orange solitary polyp about 1-2 cm across",
+      "Transparent, tapering tentacles in a ring around the central mouth",
+      "Attached to rocks; often found in caves and under ledges"
+    ],
+    imageUrl: "images/species-91.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#ff6600"
+  },
+  {
+    id: 92,
+    commonName: "Swimming Anemone",
+    latinName: "Stomphia coccinea",
+    phylum: "Cnidaria",
+    class: "Anthozoa",
+    order: "Actiniaria",
+    habitat: "Low intertidal",
+    description: "A small anemone that can actively swim by thrashing its body when threatened by predatory sea stars. The column is pale pink to red with white stripes. Attached to rocks subtidally.",
+    identificationTips: [
+      "Swims by vigorously contracting and bending its body — unique among local anemones",
+      "Pale pink to red column with fine white stripes",
+      "Up to 5 cm; often on rocks near sand"
+    ],
+    imageUrl: "images/species-92.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e8a0a0"
+  },
+  {
+    id: 93,
+    commonName: "Red Sea Urchin",
+    latinName: "Mesocentrotus franciscanus",
+    phylum: "Echinodermata",
+    class: "Echinoidea",
+    order: "Camarodonta",
+    habitat: "Low intertidal",
+    description: "The largest sea urchin on the Pacific coast, with a test up to 18 cm across and long, sharp spines up to 8 cm. Brick-red to dark maroon. Commercially harvested for uni (gonads).",
+    identificationTips: [
+      "Very large size (test up to 18 cm) with long, sharp spines (up to 8 cm)",
+      "Brick-red to dark maroon coloration",
+      "Spines are longer and more widely spaced than purple or green urchins"
+    ],
+    imageUrl: "images/species-93.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#cc3333"
+  },
+
+  // -- Additional Mollusca: Bivalves --
+  {
+    id: 94,
+    commonName: "Horse Clam",
+    latinName: "Tresus capax",
+    phylum: "Mollusca",
+    class: "Bivalvia",
+    order: "Venerida",
+    habitat: "Low intertidal",
+    description: "A very large, deep-burrowing clam with a massive, gapping shell. The siphon tips are covered in a leathery brown skin. Can weigh over 2 kg! Important food species for coastal peoples.",
+    identificationTips: [
+      "Very large shell (up to 20 cm) with a wide gape at one end",
+      "Large, leathery brown siphon visible when buried (cannot fully retract)",
+      "Shell is chalky white with a brown periostracum (outer skin)"
+    ],
+    imageUrl: "images/species-94.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#f0e8d8"
+  },
+  {
+    id: 95,
+    commonName: "Softshell Clam",
+    latinName: "Mya arenaria",
+    phylum: "Mollusca",
+    class: "Bivalvia",
+    order: "Myida",
+    habitat: "Low intertidal",
+    description: "An introduced species now common in muddy bays. Has a thin, fragile shell with a large spoon-shaped chondrophore (internal hinge shelf). The elongated siphon cannot fully retract.",
+    identificationTips: [
+      "Thin, fragile white shell that gapes at both ends",
+      "Large, spoon-shaped chondrophore in the left valve hinge",
+      "Long, fused siphon that stays partially extended"
+    ],
+    imageUrl: "images/species-95.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e8ddd0"
+  },
+
+  // -- Additional Mollusca: Gastropods --
+  {
+    id: 96,
+    commonName: "Leafy Hornmouth",
+    latinName: "Ceratostoma foliatum",
+    phylum: "Mollusca",
+    class: "Gastropoda",
+    order: "Neogastropoda",
+    habitat: "Low intertidal",
+    description: "A predatory snail with a spectacular shell featuring three prominent, leaf-like frills (varices) spaced around the shell. White to pale brown. Drills into barnacles and bivalves.",
+    identificationTips: [
+      "Three large, wing-like or leaf-like frills on the shell (varices)",
+      "White to cream shell with a pointed spire",
+      "Tooth-like ridge on the inside of the outer lip"
+    ],
+    imageUrl: "images/species-96.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#f5f0e8"
+  },
+  {
+    id: 97,
+    commonName: "White-lined Dirona",
+    latinName: "Dirona picta",
+    phylum: "Mollusca",
+    class: "Gastropoda",
+    order: "Nudibranchia",
+    habitat: "Low intertidal",
+    description: "A colorful nudibranch with bright orange cerata tipped in white. Unlike the frosted nudibranch (D. albolineata), this species has orange cerata with white tips and more body color.",
+    identificationTips: [
+      "Bright orange cerata with white tips — more colorful than D. albolineata",
+      "Translucent white to pinkish body",
+      "Up to 8 cm; found on hydroids and bryozoans"
+    ],
+    imageUrl: "images/species-97.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#ff8844"
+  },
+  {
+    id: 98,
+    commonName: "Clown Nudibranch",
+    latinName: "Triopha catalinae",
+    phylum: "Mollusca",
+    class: "Gastropoda",
+    order: "Nudibranchia",
+    habitat: "Low intertidal",
+    description: "A stunning nudibranch with a translucent white body covered in bright orange-tipped cerata. The rhinophores and gill plume are also bright orange. One of the most photogenic tidepool animals on the Pacific coast.",
+    identificationTips: [
+      "Translucent white body with numerous orange-tipped cerata (looks like it's decorated with orange candy)",
+      "Bright orange rhinophores and gill plume",
+      "Up to 7 cm; feeds on bryozoans"
+    ],
+    imageUrl: "images/species-98.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#ff8844"
+  },
+  {
+    id: 99,
+    commonName: "Shaggy Mouse Nudibranch",
+    latinName: "Aeolidia papillosa",
+    phylum: "Mollusca",
+    class: "Gastropoda",
+    order: "Nudibranchia",
+    habitat: "Low intertidal",
+    description: "A large, shaggy-looking nudibranch covered in dense, flattened cerata that make it look like a fuzzy grey or brown mouse. Feeds on anemones. Up to 10 cm long.",
+    identificationTips: [
+      "Covered in dense, grey-brown cerata — looks furry like a mouse",
+      "Can grow quite large (up to 10 cm)",
+      "Often found near or on sea anemones — its primary prey"
+    ],
+    imageUrl: "images/species-99.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#9c8c7c"
+  },
+  {
+    id: 100,
+    commonName: "Red Sponge Nudibranch",
+    latinName: "Rostanga pulchra",
+    phylum: "Mollusca",
+    class: "Gastropoda",
+    order: "Nudibranchia",
+    habitat: "Low intertidal",
+    description: "A small, bright red-orange dorid nudibranch that feeds exclusively on red encrusting sponges. Its color perfectly matches its food source — excellent camouflage. Up to 2 cm long.",
+    identificationTips: [
+      "Bright red-orange coloration that matches red encrusting sponge",
+      "Small size (up to 2 cm) with a rounded, oval body",
+      "Camouflaged on its prey; look for the gill plume at the rear"
+    ],
+    imageUrl: "images/species-100.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e65c3a"
+  },
+
+  // -- Additional Arthropoda --
+  {
+    id: 101,
+    commonName: "Oregon Cancer Crab",
+    latinName: "Cancer oregonensis",
+    phylum: "Arthropoda",
+    class: "Malacostraca",
+    order: "Decapoda",
+    habitat: "Low intertidal",
+    description: "A small cancer crab (up to 5 cm carapace width) with a smooth, purplish-brown carapace. The claws are tipped in black. Found under rocks in the low intertidal and shallow subtidal.",
+    identificationTips: [
+      "Small, purplish-brown carapace with a smooth, rounded edge",
+      "Black-tipped claws; sharp, tooth-like serrations on carapace edge",
+      "Similar to juvenile red rock crab but stays much smaller"
+    ],
+    imageUrl: "images/species-101.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#7a4a6e"
+  },
+  {
+    id: 102,
+    commonName: "Hairy Cancer Crab",
+    latinName: "Cancer harrissoni",
+    phylum: "Arthropoda",
+    class: "Malacostraca",
+    order: "Decapoda",
+    habitat: "Low intertidal",
+    description: "A small cancer crab with a carapace covered in fine hairs, giving it a velvety appearance. Reddish-brown with a smooth carapace edge. The legs are also hairy.",
+    identificationTips: [
+      "Fine hairs covering the carapace and legs — velvety appearance",
+      "Reddish-brown coloration with a smooth carapace margin",
+      "Small (carapace up to 4 cm); black-tipped claws"
+    ],
+    imageUrl: "images/species-102.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#8c5240"
+  },
+  {
+    id: 103,
+    commonName: "Flat Porcelain Crab",
+    latinName: "Petrolisthes cinctipes",
+    phylum: "Arthropoda",
+    class: "Malacostraca",
+    order: "Decapoda",
+    habitat: "Mid intertidal",
+    description: "A flat, wide porcelain crab with large claws and longer antennae than P. eriomerus. The carapace is smooth and the claws are disproportionately large. Common under rocks in the mid-intertidal.",
+    identificationTips: [
+      "Very flat body with wide, rounded carapace and large, flat claws",
+      "Reddish-brown to grey; claws may have orange-red spots",
+      "Longer carpus (wrist segment) than P. eriomerus"
+    ],
+    imageUrl: "images/species-103.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#c4926a"
+  },
+  {
+    id: 104,
+    commonName: "Long-horned Decorator Crab",
+    latinName: "Chorilia longipes",
+    phylum: "Arthropoda",
+    class: "Malacostraca",
+    order: "Decapoda",
+    habitat: "Low intertidal",
+    description: "A spider crab with long, slender legs and two long rostral horns. Actively decorates itself with sponges, hydroids, and algae for camouflage. The carapace is teardrop-shaped.",
+    identificationTips: [
+      "Two long, diverging rostral horns between the eyes",
+      "Long, slender legs; often covered in attached organisms",
+      "Teardrop-shaped carapace; up to 4 cm carapace width"
+    ],
+    imageUrl: "images/species-104.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#d4886b"
+  },
+  {
+    id: 105,
+    commonName: "Smooth Brown Hermit Crab",
+    latinName: "Pagurus granosimanus",
+    phylum: "Arthropoda",
+    class: "Malacostraca",
+    order: "Decapoda",
+    habitat: "Mid intertidal",
+    habitat: "Mid intertidal",
+    description: "A common hermit crab with a smooth, dark olive to brown body and bright blue specks on the legs. The claws are smooth (not hairy like P. hirsutiusculus). Often found in larger shells.",
+    identificationTips: [
+      "Smooth claws and legs (compare with hairy hermit crab)",
+      "Bright blue specks or dots on the walking legs",
+      "Antennae are solid dark (not banded like the hairy hermit)"
+    ],
+    imageUrl: "images/species-105.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#5c6e4e"
+  },
+
+  // -- Additional Annelida --
+  {
+    id: 106,
+    commonName: "Bloodworm",
+    latinName: "Glycera americana",
+    phylum: "Annelida",
+    class: "Polychaeta",
+    order: "Phyllodocida",
+    habitat: "Low intertidal",
+    description: "A large, pink to red segmented worm with a fearsome eversible proboscis tipped with four black jaws. Burrows in sand and mud. Can deliver a painful bite — handle with care!",
+    identificationTips: [
+      "Bright pink to red body with many segments, up to 30 cm long",
+      "Eversible proboscis with four black, hook-like jaws",
+      "Buried in sand/mud; often used as fishing bait"
+    ],
+    imageUrl: "images/species-106.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e8525a"
+  },
+  {
+    id: 107,
+    commonName: "Pacific Lugworm",
+    latinName: "Abarenicola pacifica",
+    phylum: "Annelida",
+    class: "Polychaeta",
+    order: "Capitellida",
+    habitat: "Low intertidal",
+    description: "A thick, dark brown worm that lives in U-shaped burrows in sand. Its feeding creates the characteristic coiled fecal castings on the sand surface. Important for aerating and cycling nutrients in sediments.",
+    identificationTips: [
+      "Look for coiled, squiggly sand castings on the mud/sand surface",
+      "Thick, dark brown-red body with bristly middle segments and smooth tail",
+      "Lives in U-shaped burrow; rarely seen except castings"
+    ],
+    imageUrl: "images/species-107.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#5c3a2e"
+  },
+  {
+    id: 108,
+    commonName: "Spaghetti Worm",
+    latinName: "Thelepus crispus",
+    phylum: "Annelida",
+    class: "Polychaeta",
+    order: "Terebellida",
+    habitat: "Low intertidal",
+    description: "A tube-dwelling worm that extends numerous long, thin, white feeding tentacles over the substrate to collect food particles. The tentacles look like a plate of spilled spaghetti. Body hidden in a tube under rocks.",
+    identificationTips: [
+      "Many long, white, spaghetti-like tentacles extending from a hidden tube",
+      "Tentacles are highly mobile and constantly probing the surface",
+      "Orange to red body hidden under rocks or in crevices"
+    ],
+    imageUrl: "images/species-108.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#f0d8b0"
+  },
+
+  // -- Additional Tunicates --
+  {
+    id: 109,
+    commonName: "Sea Peach",
+    latinName: "Halocynthia aurantium",
+    phylum: "Chordata",
+    class: "Ascidiacea",
+    order: "Stolidobranchia",
+    habitat: "Low intertidal",
+    habitat: "Low intertidal",
+    description: "A solitary tunicate shaped like a peach, with a tough, orange to red rough outer tunic. Attached to rocks by a small stalk. The two siphons are prominent and often have a dark rim.",
+    identificationTips: [
+      "Round, peach-shaped body with a rough, orange to red surface",
+      "Two prominent siphons with dark orange or red rims",
+      "Up to 10 cm; often found among mussels and barnacles"
+    ],
+    imageUrl: "images/species-109.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e67e22"
+  },
+  {
+    id: 110,
+    commonName: "Sea Pork",
+    latinName: "Aplidium californicum",
+    phylum: "Chordata",
+    class: "Ascidiacea",
+    order: "Aplousobranchia",
+    habitat: "Low intertidal",
+    description: "A compound tunicate that forms large, blob-like colonies that look like slabs of fatty meat (hence the name 'sea pork'). The colony is firm but gelatinous. Individual zooids are embedded in a common tunic.",
+    identificationTips: [
+      "Large, irregular, blob-like encrusting colony, pinkish-tan to orange",
+      "Firm but gelatinous texture; individual zooids visible as small pores",
+      "Often found on dock pilings and subtidal rocks"
+    ],
+    imageUrl: "images/species-110.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#d4a498"
+  },
+
+  // -- Additional Cnidaria --
+  {
+    id: 111,
+    commonName: "Lion's Mane Jellyfish",
+    latinName: "Cyanea capillata",
+    phylum: "Cnidaria",
+    class: "Scyphozoa",
+    order: "Semaeostomeae",
+    habitat: "Low intertidal",
+    description: "The largest jellyfish species in the world — the bell can reach 2 m across with tentacles trailing up to 30 m! Smaller specimens wash into tidepools. The bell is orange to red with 8 clusters of tentacles.",
+    identificationTips: [
+      "Large, saucer-shaped orange to deep red bell",
+      "8 clusters of many fine, hair-like tentacles hanging from the bell margin",
+      "Smaller specimens common in tidepools; tentacles can still sting!"
+    ],
+    imageUrl: "images/species-111.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#e85d3a"
+  },
+  {
+    id: 112,
+    commonName: "Moon Jelly",
+    latinName: "Aurelia labiata",
+    phylum: "Cnidaria",
+    class: "Scyphozoa",
+    order: "Semaeostomeae",
+    habitat: "Low intertidal",
+    description: "A common jellyfish with a transparent, saucer-shaped bell and four horseshoe-shaped gonads visible through the bell. The margin has short, fringe-like tentacles. Mild sting to humans.",
+    identificationTips: [
+      "Four purple or white horseshoe-shaped gonads visible through the transparent bell",
+      "Bell is flat and saucer-like, up to 40 cm across",
+      "Short fringe of tentacles around the bell margin"
+    ],
+    imageUrl: "images/species-112.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#d0c8e8"
+  },
+  {
+    id: 113,
+    commonName: "Spotted Jellyfish",
+    latinName: "Phacellophora camtschatica",
+    phylum: "Cnidaria",
+    class: "Scyphozoa",
+    order: "Semaeostomeae",
+    habitat: "Low intertidal",
+    description: "A large, beautiful jellyfish with a translucent bell covered in white spots. Often called the 'egg-yolk jelly' due to the yellowish center. The tentacles are arranged in 16 clusters below the bell.",
+    identificationTips: [
+      "Translucent bell covered in conspicuous white spots",
+      "Yellowish-orange central gonads that look like an egg yolk",
+      "16 clusters of tentacles; up to 60 cm bell diameter"
+    ],
+    imageUrl: "images/species-113.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#e8e0a0"
+  },
+
+  // -- Porifera: More Sponges --
+  {
+    id: 114,
+    commonName: "Red Encrusting Sponge",
+    latinName: "Clathria pennata",
+    phylum: "Porifera",
+    class: "Demospongiae",
+    order: "Poecilosclerida",
+    habitat: "Low intertidal",
+    description: "A bright red to orange encrusting sponge that forms thin sheets on rocks and pilings. The surface is rough with small oscula scattered across. Common in shaded areas.",
+    identificationTips: [
+      "Bright red to orange encrusting sheet on rocks or pilings",
+      "Surface is rough or velvety with scattered oscula (pores)",
+      "Often found under ledges, in caves, or on vertical rock faces"
+    ],
+    imageUrl: "images/species-114.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#cc4444"
+  },
+  {
+    id: 115,
+    commonName: "Yellow Boring Sponge",
+    latinName: "Cliona celata",
+    phylum: "Porifera",
+    class: "Demospongiae",
+    order: "Clionaida",
+    habitat: "Low intertidal",
+    description: "A sponge that bores into mollusk shells, creating a honeycomb of tunnels. The visible part is a bright sulphur-yellow, lobed mass. Weakens and can kill oysters and other bivalves.",
+    identificationTips: [
+      "Bright sulphur-yellow lobed or encrusting mass on shells",
+      "Tiny holes visible on infested shells where the sponge has bored in",
+      "Feels firm and slightly rough; has a distinctive smell"
+    ],
+    imageUrl: "images/species-115.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e8d44d"
+  },
+
+  // -- Algae/Seaweed (Macroalgae) --
+  {
+    id: 116,
+    commonName: "Sea Lettuce",
+    latinName: "Ulva lactuca",
+    phylum: "Chlorophyta",
+    class: "Ulvophyceae",
+    order: "Ulvales",
+    habitat: "High to mid intertidal",
+    description: "A bright green, sheet-like alga that looks exactly like translucent lettuce leaves. Only 2 cells thick! Grows rapidly in nutrient-rich water and is an important food source for many grazers.",
+    identificationTips: [
+      "Bright grass-green, translucent sheets with ruffled edges",
+      "Very thin (only 2 cell layers thick); tears easily",
+      "Often found in tidepools and on rocks in the high intertidal"
+    ],
+    imageUrl: "images/species-116.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#44dd44"
+  },
+  {
+    id: 117,
+    commonName: "Turkish Towel",
+    latinName: "Chondracanthus exasperatus",
+    phylum: "Rhodophyta",
+    class: "Florideophyceae",
+    order: "Gigartinales",
+    habitat: "Low intertidal",
+    description: "A large, thick red alga with a bumpy, textured surface that feels exactly like a rough towel. Deep red to purplish-brown. Can grow up to 1 m long. Used historically for scrubbing.",
+    identificationTips: [
+      "Thick, leathery red blade covered in small bumps (papillae)",
+      "Dark red to purplish-brown; feels rough and bumpy like a towel",
+      "Single large blade, often with irregular edges"
+    ],
+    imageUrl: "images/species-117.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#8b2040"
+  },
+  {
+    id: 118,
+    commonName: "Rockweed",
+    latinName: "Fucus distichus",
+    phylum: "Ochrophyta",
+    class: "Phaeophyceae",
+    order: "Fucales",
+    habitat: "High to mid intertidal",
+    description: "The dominant brown alga of the high intertidal zone. Has a flattened, forking thallus with swollen, jelly-filled reproductive tips (receptacles). Each receptacle contains conceptacles that release gametes.",
+    identificationTips: [
+      "Flattened, olive-brown branching thallus with forked tips",
+      "Swollen, yellowish-orange tips (receptacles) when reproductive",
+      "Forms dense mats in the high intertidal; has a midrib"
+    ],
+    imageUrl: "images/species-118.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#6b8e3a"
+  },
+  {
+    id: 119,
+    commonName: "Bull Kelp",
+    latinName: "Nereocystis luetkeana",
+    phylum: "Ochrophyta",
+    class: "Phaeophyceae",
+    order: "Laminariales",
+    habitat: "Low intertidal",
+    description: "An iconic canopy-forming kelp that can grow up to 30 m long. Has a long, hollow stipe ending in a large, spherical float (pneumatocyst) from which the blades grow. Forms vast underwater forests.",
+    identificationTips: [
+      "Long, smooth, hollow stipe ending in a large, round float (up to 15 cm)",
+      "Numerous long, ruffled blades grow from the top of the float",
+      "Olive-brown to dark brown; found subtidally but washes into tidepools"
+    ],
+    imageUrl: "images/species-119.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#5c7a2e"
+  },
+  {
+    id: 120,
+    commonName: "Sea Sac",
+    latinName: "Halosaccion glandiforme",
+    phylum: "Rhodophyta",
+    class: "Florideophyceae",
+    order: "Palmariales",
+    habitat: "Mid intertidal",
+    description: "A distinctive red alga that forms hollow, water-filled sacs. When squeezed, the sac squirts water — kids love this! The sacs are filled with seawater, which prevents desiccation at low tide.",
+    identificationTips: [
+      "Hollow, oblong, water-filled sacs (like tiny water balloons)",
+      "Reddish-purple to brownish; up to 15 cm long",
+      "Squirts water when squeezed; found attached to rocks in the mid-intertidal"
+    ],
+    imageUrl: "images/species-120.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#a03050"
+  },
+  {
+    id: 121,
+    commonName: "Coralline Algae",
+    latinName: "Corallina officinalis",
+    phylum: "Rhodophyta",
+    class: "Florideophyceae",
+    order: "Corallinales",
+    habitat: "Mid intertidal",
+    description: "A pink, feathery-looking red alga that deposits calcium carbonate in its cell walls, making it hard and crunchy to the touch. Grows in dense tufts on rocks. The pink pigment helps protect against UV radiation.",
+    identificationTips: [
+      "Pink to lavender, feathery branches with a hard, crunchy texture",
+      "Jointed appearance — alternating calcified segments and flexible nodes",
+      "Forms dense tufts on rock surfaces; bleached white when dead"
+    ],
+    imageUrl: "images/species-121.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#e890a0"
+  },
+  {
+    id: 122,
+    commonName: "Dead Man's Fingers",
+    latinName: "Codium fragile",
+    phylum: "Chlorophyta",
+    class: "Ulvophyceae",
+    order: "Bryopsidales",
+    habitat: "Low intertidal",
+    description: "A dark green, spongy alga with thick, finger-like branches that look like swollen, fuzzy fingers. The texture is like wet felt. An invasive species in some areas, originally from the Pacific Northwest.",
+    identificationTips: [
+      "Thick, finger-like, dark green branches with a spongy, felt-like texture",
+      "Looks like a clump of green fingers or a fuzzy green sponge",
+      "Attached to rocks or shells; up to 30 cm tall"
+    ],
+    imageUrl: "images/species-122.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#2d6b2d"
+  },
+
+  // -- Additional Arthropod-like / Misc --
+  {
+    id: 123,
+    commonName: "Tidepool Copepod",
+    latinName: "Tigriopus californicus",
+    phylum: "Arthropoda",
+    class: "Hexanauplia",
+    order: "Harpacticoida",
+    habitat: "High intertidal",
+    description: "A tiny (about 1 mm) bright red-orange crustacean that swarms in high-intertidal splash pools. Extremely abundant — turns the water orange in high densities. Tolerates extreme temperature and salinity changes.",
+    identificationTips: [
+      "Tiny (1 mm), bright orange-red, jerky swimming motion",
+      "Swarms in huge numbers in splash-zone pools",
+      "Makes the water look orange or reddish when present in large numbers"
+    ],
+    imageUrl: "images/species-123.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#ff6644"
+  },
+  {
+    id: 124,
+    commonName: "Masking Crab",
+    latinName: "Loxorhynchus crispatus",
+    phylum: "Arthropoda",
+    class: "Malacostraca",
+    order: "Decapoda",
+    habitat: "Low intertidal",
+    description: "A master of disguise — this spider crab actively decorates itself with algae, sponges, and bryozoans using hooked setae on its carapace. The decorations make it nearly invisible in its environment.",
+    identificationTips: [
+      "Almost always covered in algae, sponges, or bryozoans — looks like a moving patch of debris",
+      "Teardrop-shaped carapace with hooked bristles for attaching decorations",
+      "Long, slender legs; juveniles are especially well-camouflaged"
+    ],
+    imageUrl: "images/species-124.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY",
+    color: "#8c8c6c"
+  },
+  {
+    id: 125,
+    commonName: "Giant Barnacle",
+    latinName: "Balanus nubilus",
+    phylum: "Arthropoda",
+    class: "Thecostraca",
+    order: "Balanomorpha",
+    habitat: "Low intertidal",
+    description: "The largest barnacle on the Pacific coast, reaching up to 10 cm diameter and 15 cm height. The shell is heavily ridged and grey-white. These giants filter-feed on plankton and are a favorite food of sea stars.",
+    identificationTips: [
+      "Very large (up to 10 cm diameter) volcano-shaped shell with heavy ridges",
+      "Grey-white shell with a large opening at the top",
+      "Solitary or in small clusters; mostly subtidal but found low intertidal"
+    ],
+    imageUrl: "images/species-125.jpg",
+    imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
+    color: "#d0cfc8"
   }
 ];
