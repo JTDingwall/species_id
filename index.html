@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="referrer" content="no-referrer">
-    <meta name="theme-color" content="#1a6e8a">
-    <meta name="description" content="Bamfield Marine Species ID - Interactive identification training for undergraduate students">
+    <meta name="theme-color" content="#0a3d5c">
+    <meta name="description" content="Bamfield Marine Species ID - 125 intertidal and nearshore species for field identification training">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🐚</text></svg>">
     <title>Bamfield Species ID</title>
@@ -18,6 +18,18 @@
         <h1>Bamfield Species ID</h1>
         <span class="header-icon" id="infoBtn" title="About">ℹ️</span>
     </header>
+
+    <!-- Zonation Sidebar (Library view only) -->
+    <div class="zone-sidebar" id="zoneSidebar">
+        <div class="zone-indicator" id="zoneIndicator"></div>
+        <div class="zone-labels">
+            <div class="zone-label" data-zone="splash"><span>Splash</span></div>
+            <div class="zone-label" data-zone="high"><span>High</span></div>
+            <div class="zone-label" data-zone="mid"><span>Mid</span></div>
+            <div class="zone-label" data-zone="low"><span>Low</span></div>
+            <div class="zone-label" data-zone="subtidal"><span>Subtidal</span></div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="main-content" id="mainContent">
@@ -93,14 +105,15 @@
     <div class="modal-overlay" id="infoModal">
         <div class="modal-content">
             <div class="modal-body">
-                <h2>About This App</h2>
-                <p style="margin-top: 12px;">Bamfield Species ID is designed to help undergraduate students learn to identify common intertidal marine animals found in Bamfield, British Columbia.</p>
-                <p><strong>Species:</strong> 25 common intertidal species</p>
+                <h2>🌊 About This App</h2>
+                <p style="margin-top: 12px;">Bamfield Species ID is designed to help undergraduate students learn to identify common intertidal and nearshore marine species found in Bamfield, British Columbia.</p>
+                <p><strong>Species:</strong> 125 intertidal, subtidal, & nearshore fish species</p>
+                <p><strong>Photos:</strong> Sourced from Wikimedia Commons (CC-BY-SA / public domain)</p>
                 <p><strong>Games:</strong> Flashcards, Quiz, Matching, Timed Challenge</p>
-                <p><strong>Offline:</strong> Load once, then works without internet</p>
-                <hr style="margin: 16px 0; border: none; border-top: 1px solid #eee;">
+                <p><strong>Offline capable:</strong> PWA with full offline service worker caching</p>
+                <hr style="margin: 16px 0; border: none; border-top: 1px solid var(--sand);">
                 <p style="font-size: 0.85rem; color: var(--text-light);">
-                    Images sourced from Wikimedia Commons under CC-BY-SA and public domain licenses. Species data curated for Bamfield intertidal zone.
+                    Developed by <strong>Jake Dingwall, MSc</strong> · Built using <strong>DeepSeek-V4-Pro-High</strong> via <strong>Cline</strong> in <strong>VSCode</strong>
                 </p>
                 <button class="modal-close" onclick="document.getElementById('infoModal').classList.remove('open')">Close</button>
             </div>

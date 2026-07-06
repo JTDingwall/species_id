@@ -136,7 +136,7 @@ const SPECIES_DATA = [
     phylum: "Mollusca",
     class: "Polyplacophora",
     order: "Neoloricata",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "The largest chiton in the world, growing up to 33 cm! It looks like a football-sized reddish-brown blob, but has 8 small white shell plates embedded under its leathery skin.",
     identificationTips: [
       "Huge, reddish-brown leathery body — looks like a 'gumboot'",
@@ -1069,7 +1069,7 @@ const SPECIES_DATA = [
     phylum: "Cnidaria",
     class: "Anthozoa",
     order: "Actiniaria",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "A tall, elegant anemone with numerous fine, feathery tentacles. White, cream, or orange. Can grow up to 30 cm tall. Common on dock pilings and subtidal rocks.",
     identificationTips: [
       "Tall, slender column topped with a dense plume of fine, feathery tentacles",
@@ -1141,7 +1141,7 @@ const SPECIES_DATA = [
     phylum: "Cnidaria",
     class: "Hydrozoa",
     order: "Leptothecata",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "A nearly transparent jellyfish famous for its green fluorescent protein (GFP), which revolutionized molecular biology. Up to 10 cm diameter. Glows around the rim when disturbed.",
     identificationTips: [
       "Almost completely transparent, saucer-shaped bell",
@@ -2036,7 +2036,7 @@ const SPECIES_DATA = [
     phylum: "Cnidaria",
     class: "Scyphozoa",
     order: "Semaeostomeae",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "The largest jellyfish species in the world — the bell can reach 2 m across with tentacles trailing up to 30 m! Smaller specimens wash into tidepools. The bell is orange to red with 8 clusters of tentacles.",
     identificationTips: [
       "Large, saucer-shaped orange to deep red bell",
@@ -2054,7 +2054,7 @@ const SPECIES_DATA = [
     phylum: "Cnidaria",
     class: "Scyphozoa",
     order: "Semaeostomeae",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "A common jellyfish with a transparent, saucer-shaped bell and four horseshoe-shaped gonads visible through the bell. The margin has short, fringe-like tentacles. Mild sting to humans.",
     identificationTips: [
       "Four purple or white horseshoe-shaped gonads visible through the transparent bell",
@@ -2072,7 +2072,7 @@ const SPECIES_DATA = [
     phylum: "Cnidaria",
     class: "Scyphozoa",
     order: "Semaeostomeae",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "A large, beautiful jellyfish with a translucent bell covered in white spots. Often called the 'egg-yolk jelly' due to the yellowish center. The tentacles are arranged in 16 clusters below the bell.",
     identificationTips: [
       "Translucent bell covered in conspicuous white spots",
@@ -2184,7 +2184,7 @@ const SPECIES_DATA = [
     phylum: "Ochrophyta",
     class: "Phaeophyceae",
     order: "Laminariales",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "An iconic canopy-forming kelp that can grow up to 30 m long. Has a long, hollow stipe ending in a large, spherical float (pneumatocyst) from which the blades grow. Forms vast underwater forests.",
     identificationTips: [
       "Long, smooth, hollow stipe ending in a large, round float (up to 15 cm)",
@@ -2294,7 +2294,7 @@ const SPECIES_DATA = [
     phylum: "Arthropoda",
     class: "Thecostraca",
     order: "Balanomorpha",
-    habitat: "Low intertidal",
+    habitat: "Subtidal",
     description: "The largest barnacle on the Pacific coast, reaching up to 10 cm diameter and 15 cm height. The shell is heavily ridged and grey-white. These giants filter-feed on plankton and are a favorite food of sea stars.",
     identificationTips: [
       "Very large (up to 10 cm diameter) volcano-shaped shell with heavy ridges",

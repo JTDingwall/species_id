@@ -31,6 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial render
     renderLibrary();
+
+    // Zonation scroll tracking for library
+    const main = document.getElementById('mainContent');
+    if (main) {
+        main.addEventListener('scroll', function() {
+            const topBtn = document.querySelector('.nav-item[data-page="library"]');
+            if (topBtn && topBtn.classList.contains('active')) {
+                updateZoneIndicator();
+            }
+        });
+    }
 });
 
 function navigateTo(page) {
