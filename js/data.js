@@ -16,7 +16,7 @@ const SPECIES_DATA = [
       "Tentacles arranged in multiple rings around the mouth",
       "Often found in tidepools and low intertidal zones"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Anthopleura_xanthogrammica_001.jpg/400px-Anthopleura_xanthogrammica_001.jpg",
+    imageUrl: "images/species-01.jpg",
     imageCredit: "Photo: Stan Shebs / Wikimedia Commons CC-BY-SA",
     color: "#2ecc71"
   },
@@ -34,7 +34,7 @@ const SPECIES_DATA = [
       "Pink or lavender-tipped tentacles",
       "Green column with distinctive vertical stripes or lines"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Anthopleura_elegantissima_3.jpg/400px-Anthopleura_elegantissima_3.jpg",
+    imageUrl: "images/species-02.jpg",
     imageCredit: "Photo: NOAA / Wikimedia Commons public domain",
     color: "#9b59b6"
   },
@@ -52,7 +52,7 @@ const SPECIES_DATA = [
       "Color varies: purple, orange, brown, or reddish",
       "Often found wrapped around mussels — its favorite prey"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ochre_Starfish.jpg/400px-Ochre_Starfish.jpg",
+    imageUrl: "images/species-03.jpg",
     imageCredit: "Photo: Ed Bierman / Wikimedia Commons CC-BY",
     color: "#e74c3c"
   },
@@ -70,7 +70,7 @@ const SPECIES_DATA = [
       "Often found in rounded depressions or 'pits' in rocks",
       "Spines radiate in all directions; moves slowly on tube feet"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Purple_Sea_Urchin_at_Anacapa_Island.jpg/400px-Purple_Sea_Urchin_at_Anacapa_Island.jpg",
+    imageUrl: "images/species-04.jpg",
     imageCredit: "Photo: Jacob L. / Wikimedia Commons CC-BY",
     color: "#8e44ad"
   },
@@ -88,7 +88,7 @@ const SPECIES_DATA = [
       "Blue-black to purplish-brown shell color",
       "Forms thick, dense beds in the mid-intertidal zone"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mytilus_californianus_2.jpg/400px-Mytilus_californianus_2.jpg",
+    imageUrl: "images/species-05.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#2c3e50"
   },
@@ -106,7 +106,7 @@ const SPECIES_DATA = [
       "Shiny blue-black shell with a thin, sharp edge",
       "Found higher up on rocks than California mussels"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mytilus_trossulus.jpg/400px-Mytilus_trossulus.jpg",
+    imageUrl: "images/species-06.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#34495e"
   },
@@ -124,7 +124,7 @@ const SPECIES_DATA = [
       "Pearly white interior visible when the snail is active",
       "Often found in large groups on rocks and in crevices"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tegula_funebralis_001.jpg/400px-Tegula_funebralis_001.jpg",
+    imageUrl: "images/species-07.jpg",
     imageCredit: "Photo: Stan Shebs / Wikimedia Commons CC-BY-SA",
     color: "#1a1a2e"
   },
@@ -142,7 +142,7 @@ const SPECIES_DATA = [
       "8 small white shell plates visible if you gently lift the skin",
       "Feels like tough rubber; found in low intertidal and subtidal"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cryptochiton_stelleri_%28gumboot_chiton%29.jpg/400px-Cryptochiton_stelleri_%28gumboot_chiton%29.jpg",
+    imageUrl: "images/species-08.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#8b4513"
   },
@@ -160,7 +160,7 @@ const SPECIES_DATA = [
       "Only a narrow strip of white shell plates visible down the center back",
       "Often found under rocks and in crevices"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Katharina_tunicata_1.jpg/400px-Katharina_tunicata_1.jpg",
+    imageUrl: "images/species-09.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#111111"
   },
@@ -178,7 +178,7 @@ const SPECIES_DATA = [
       "Grows in dense clusters on wave-exposed rocks",
       "The stalk is dark grey-black, the plates are lighter grey"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Gooseneck_barnacles_at_Low_Tide.jpg/400px-Gooseneck_barnacles_at_Low_Tide.jpg",
+    imageUrl: "images/species-10.jpg",
     imageCredit: "Photo: Ed Bierman / Wikimedia Commons CC-BY",
     color: "#7f8c8d"
   },
@@ -196,7 +196,7 @@ const SPECIES_DATA = [
       "Forms dense white bands on rocks in the high intertidal",
       "Tiny feathery legs extend from the opening to filter feed when submerged"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Acorn_barnacles.jpg/400px-Acorn_barnacles.jpg",
+    imageUrl: "images/species-11.jpg",
     imageCredit: "Photo: National Park Service / Wikimedia Commons public domain",
     color: "#bdc3c7"
   },
@@ -214,7 +214,7 @@ const SPECIES_DATA = [
       "Square carapace with no hairs (unlike the similar green shore crab)",
       "Eyes on stalks that can fold into sockets"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hemigrapsus_nudus.jpg/400px-Hemigrapsus_nudus.jpg",
+    imageUrl: "images/species-12.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#8e44ad"
   },
@@ -232,7 +232,7 @@ const SPECIES_DATA = [
       "Claws are usually greenish, not purple (compare with H. nudus)",
       "Prefers muddy or rocky shores in more sheltered areas"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hemigrapsus_oregonensis.jpg/400px-Hemigrapsus_oregonensis.jpg",
+    imageUrl: "images/species-13.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#27ae60"
   },
@@ -250,7 +250,7 @@ const SPECIES_DATA = [
       "Large, oval carapace with a smooth edge",
       "Powerful claws — can pinch hard! Handle with care"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Red_rock_crab.jpg/400px-Red_rock_crab.jpg",
+    imageUrl: "images/species-14.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#c0392b"
   },
@@ -268,7 +268,7 @@ const SPECIES_DATA = [
       "Lives in a leathery tube attached to rocks or docks",
       "Retracts completely into its tube when touched or shadowed"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eudistylia_polymorpha_1.jpg/400px-Eudistylia_polymorpha_1.jpg",
+    imageUrl: "images/species-15.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#e74c3c"
   },
@@ -286,7 +286,7 @@ const SPECIES_DATA = [
       "Pale brown with darker brown concentric bands",
       "Can 'jump' by rapidly flexing its foot when handled"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Clinocardium_nuttallii.jpg/400px-Clinocardium_nuttallii.jpg",
+    imageUrl: "images/species-16.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#d4a574"
   },
@@ -304,7 +304,7 @@ const SPECIES_DATA = [
       "Hinge has a prominent 'spoon-shaped' tooth",
       "Siphon tips are split (look for a dark spot at each tip)"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Saxidomus_gigantea.jpg/400px-Saxidomus_gigantea.jpg",
+    imageUrl: "images/species-17.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#ecf0f1"
   },
@@ -322,7 +322,7 @@ const SPECIES_DATA = [
       "Shell color varies: white, cream, or with brown zigzag patterns",
       "Siphon tips are fused (compare to butter clam's split siphons)"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Leukoma_staminea_1.jpg/400px-Leukoma_staminea_1.jpg",
+    imageUrl: "images/species-18.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#d5b895"
   },
@@ -340,7 +340,7 @@ const SPECIES_DATA = [
       "Smooth surface texture (no prominent spines)",
       "Arms are round in cross-section, not flattened"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Henricia_leviuscula.jpg/400px-Henricia_leviuscula.jpg",
+    imageUrl: "images/species-19.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#e74c3c"
   },
@@ -358,7 +358,7 @@ const SPECIES_DATA = [
       "10 large branching tentacles that look like a tree or fern",
       "Often found on the undersides of rocks or in crevices"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Cucumaria_miniata.jpg/400px-Cucumaria_miniata.jpg",
+    imageUrl: "images/species-20.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#e67e22"
   },
@@ -376,7 +376,7 @@ const SPECIES_DATA = [
       "Pink to reddish column with fine vertical white stripes",
       "Tentacles are translucent with a pinkish tint"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Epiactis_lisbethae.jpg/400px-Epiactis_lisbethae.jpg",
+    imageUrl: "images/species-21.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#ff69b4"
   },
@@ -394,7 +394,7 @@ const SPECIES_DATA = [
       "Shell is pale grey with dark lines between plates",
       "Has a large, triangular opening at the top"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Semibalanus_cariosus.jpg/400px-Semibalanus_cariosus.jpg",
+    imageUrl: "images/species-22.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#95a5a6"
   },
@@ -412,7 +412,7 @@ const SPECIES_DATA = [
       "Sharp pointed spire with about 5-6 whorls",
       "Found high up on rocks, often hiding in barnacle shells"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Littorina_scutulata.jpg/400px-Littorina_scutulata.jpg",
+    imageUrl: "images/species-23.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#7f8c8d"
   },
@@ -430,7 +430,7 @@ const SPECIES_DATA = [
       "Smooth shell with fine spiral ridges (not checkered pattern)",
       "Color varies: grey, olive, yellow-brown, often with bands"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Littorina_sitkana.jpg/400px-Littorina_sitkana.jpg",
+    imageUrl: "images/species-24.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#8c8c6b"
   },
@@ -448,7 +448,7 @@ const SPECIES_DATA = [
       "Color ranges from purple to orange, pink, or brown",
       "Very large (up to 1 m across) and 'fleshy' or 'puffy' appearance"
     ],
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pycnopodia_helianthoides_1.jpg/400px-Pycnopodia_helianthoides_1.jpg",
+    imageUrl: "images/species-25.jpg",
     imageCredit: "Photo: Kirt L. Onthank / Wikimedia Commons CC-BY-SA",
     color: "#d4a017"
   }
