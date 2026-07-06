@@ -83,7 +83,7 @@ function renderZonationView(species) {
         return;
     }
 
-    // Group by zone, then by phylum within each zone
+    // Group by zone only
     const zoneGroups = {};
     for (const z of ZONE_ORDER) zoneGroups[z] = [];
 
@@ -97,13 +97,6 @@ function renderZonationView(species) {
         const zoneSpecies = zoneGroups[zone];
         if (zoneSpecies.length === 0) continue;
 
-        // Sub-group by phylum
-        const phyla = {};
-        for (const s of zoneSpecies) {
-            if (!phyla[s.phylum]) phyla[s.phylum] = [];
-            phyla[s.phylum].push(s);
-        }
-
         html += `
             <div class="zone-section" data-zone="${zone}">
                 <div class="zone-section-header ${ZONE_HEADER_CLASS[zone]}" onclick="toggleGroup(this)">
@@ -112,24 +105,12 @@ function renderZonationView(species) {
                     <span class="zone-count">${zoneSpecies.length}</span>
                 </div>
                 <div class="zone-body">
-        `;
-
-        for (const [phylum, phylumSpecies] of Object.entries(phyla)) {
-            html += `
-                <div class="taxon-group">
-                    <div class="taxon-header" onclick="event.stopPropagation(); toggleTaxonGroup(this)">
-                        <span class="chevron open">▶</span>
-                        <span>${phylum}</span>
-                        <span class="count">${phylumSpecies.length}</span>
-                    </div>
                     <div class="species-grid">
-                        ${phylumSpecies.map(s => renderSpeciesCard(s)).join('')}
+                        ${zoneSpecies.map(s => renderSpeciesCard(s)).join('')}
                     </div>
                 </div>
-            `;
-        }
-
-        html += `</div></div>`;
+            </div>
+        `;
     }
 
     grid.innerHTML = html;
