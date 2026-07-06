@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a6e8a">
+    <meta name="description" content="Bamfield Marine Species ID - Interactive identification training for undergraduate students">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🐚</text></svg>">
+    <title>Bamfield Species ID</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <span class="header-icon">🐚</span>
+        <h1>Bamfield Species ID</h1>
+        <span class="header-icon" id="infoBtn" title="About">ℹ️</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Library Page -->
+        <div class="page active" id="page-library">
+            <div id="libraryContent"></div>
+        </div>
+
+        <!-- Flashcards Page -->
+        <div class="page" id="page-flashcards">
+            <div id="flashcardContent"></div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div class="page" id="page-quiz">
+            <div id="quizContent"></div>
+        </div>
+
+        <!-- Matching Page -->
+        <div class="page" id="page-matching">
+            <div id="matchingContent"></div>
+        </div>
+
+        <!-- Timed Challenge Page -->
+        <div class="page" id="page-timed">
+            <div id="timedContent"></div>
+        </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-item active" data-page="library">
+            <span class="nav-icon">📚</span>
+            <span>Library</span>
+        </button>
+        <button class="nav-item" data-page="flashcards">
+            <span class="nav-icon">🃏</span>
+            <span>Flashcards</span>
+        </button>
+        <button class="nav-item" data-page="quiz">
+            <span class="nav-icon">❓</span>
+            <span>Quiz</span>
+        </button>
+        <button class="nav-item" data-page="matching">
+            <span class="nav-icon">🔗</span>
+            <span>Match</span>
+        </button>
+        <button class="nav-item" data-page="timed">
+            <span class="nav-icon">⏱️</span>
+            <span>Timed</span>
+        </button>
+    </nav>
+
+    <!-- Species Detail Modal -->
+    <div class="modal-overlay" id="speciesModal">
+        <div class="modal-content">
+            <img class="modal-img" id="modalImg" src="" alt="">
+            <div class="modal-body">
+                <h2 id="modalCommonName"></h2>
+                <div class="latin-name" id="modalLatinName"></div>
+                <div class="taxonomy" id="modalTaxonomy"></div>
+                <div class="habitat-tag" id="modalHabitat"></div>
+                <p id="modalDescription"></p>
+                <div class="tips-title">🔍 Identification Tips</div>
+                <ul id="modalTips"></ul>
+                <div class="credit" id="modalCredit"></div>
+                <button class="modal-close" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2>About This App</h2>
+                <p style="margin-top: 12px;">Bamfield Species ID is designed to help undergraduate students learn to identify common intertidal marine animals found in Bamfield, British Columbia.</p>
+                <p><strong>Species:</strong> 25 common intertidal species</p>
+                <p><strong>Games:</strong> Flashcards, Quiz, Matching, Timed Challenge</p>
+                <p><strong>Offline:</strong> Load once, then works without internet</p>
+                <hr style="margin: 16px 0; border: none; border-top: 1px solid #eee;">
+                <p style="font-size: 0.85rem; color: var(--text-light);">
+                    Images sourced from Wikimedia Commons under CC-BY-SA and public domain licenses. Species data curated for Bamfield intertidal zone.
+                </p>
+                <button class="modal-close" onclick="document.getElementById('infoModal').classList.remove('open')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/flashcards.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/matching.js"></script>
+    <script src="js/timed.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

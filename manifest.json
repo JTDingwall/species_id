@@ -1,0 +1,16 @@
+{
+  "name": "Bamfield Species ID",
+  "short_name": "Species ID",
+  "description": "Interactive marine species identification training for Bamfield, BC",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f0f6f9",
+  "theme_color": "#1a6e8a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🐚</text></svg>",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ]
+}
