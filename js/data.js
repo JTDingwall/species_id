@@ -2304,7 +2304,7 @@ const SPECIES_DATA = [
     imageUrl: "images/species-125.jpg",
     imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
     color: "#d0cfc8"
-  }
+  },
   {
     id: 126,
     commonName: "Bull Kelp",
@@ -3648,7 +3648,7 @@ const SPECIES_DATA = [
     imageUrl: "images/species-221.jpg",
     imageCredit: "Photo: Wikimedia Commons CC-BY-SA",
     color: "#667788"
-  }
+  },
   {
     id: 222,
     commonName: "Red Irish Lord",
